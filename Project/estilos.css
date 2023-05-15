@@ -285,7 +285,7 @@ align-items: center;
   /*Establecelaalturadeseada*/width: 600px;
   /*Estableceelanchodeseado*/object-fit: cover;
   flex-basis: 50%;
-  margin-top: -27px;
+  
   border-radius: 10px;
   transition: transform 0.3s;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
