@@ -1,0 +1,449 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Caveat Brush', cursive;
+    line-height: 1.2;
+    color: #333;
+    background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+  }
+  
+  /* Estilos del encabezado */
+  .contenedor {
+    display: flex;
+    align-content: space-around;
+    flex-direction: column;
+    text-align: center;
+   
+    
+  }
+  
+  .header {
+    background-color: #f19a28;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+    z-index: 999;
+    position: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo img {
+    height: 110px;
+    border-radius: 50%;
+    width: 110px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo img:hover {
+    transform: translateX(10px);
+  }
+  
+  nav {
+    flex-grow: 1;
+  }
+  
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+  
+  nav li {
+    margin: 0 20px;
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  nav a:hover {
+    background-color: #555;
+  }
+  
+  .contacto {
+    margin-right: 40px;
+  }
+  
+  .contacto a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ee0505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .contacto a:hover {
+    background-color: #0e0801e3;
+  }
+  
+  /* Estilos de la sección de introducción */
+  
+  .contenedor1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: auto;
+    gap: 70em;
+  }
+  
+  .intro {
+    position: relative;
+    top: 12em;
+    background-color: #c4050588;
+    width: 100vw;
+    margin-top: -50px;
+  }
+  
+  .titulo {
+    position: relative;
+    font-family: 'Henny Penny', cursive;
+    font-size: 50px;
+  }
+  
+  .subtitulo {
+    position: relative;
+    font-family: 'Henny Penny', cursive;
+    font-size: 36px;
+    top: -1em;
+  }
+  
+  .contenido-intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -2em;
+  }
+  
+  .texto-1 {
+    font-size: 25px;
+    margin: 0 40px;
+  }
+  
+  .imagen-intro {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 20px;
+    margin-bottom: 5em;
+  }
+  
+  .imagen-intro img {
+    max-width: 25%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .imagen-intro img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  .boton-contacto button {
+    padding: 10px 20px;
+    background-color: #ee0505;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 20em;
+  }
+  
+  .boton-contacto button:hover {
+    background-color: #0e0801e3;
+  }
+  
+  /* Juegos*/
+  
+  .contenedorJuegosN{
+  display: flex;
+  margin-top: -58em;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-color: #f78809a1;
+  
+  }
+  
+  .titulo-juegos{
+    font-size: 27px;
+    font-family: 'Henny Penny', cursive;
+    margin-top: 30px;
+    width: 100%;
+  }
+  
+  .subtituloJ1 {
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 22px
+  }
+  
+  .subtituloJ2 {
+    margin-top: 100px;
+    font-weight: bold;
+    font-size: 22px
+  }
+  .imagenesJ {
+    display: flex;
+    justify-content: center;
+    gap:40px;
+    margin-top: 20px;
+    margin-bottom: 5em;
+  }
+  
+  .imagenes1 img {
+    height: 400px;
+    width: 500px;
+    object-fit: cover;
+    
+    
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+  }
+  
+  .imagenes1 img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  .contenedorJuegos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e61b09c3;
+    width: 100%;
+    margin-top: -70em;
+  }
+  
+  .contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; /* Establece el ancho del div de contenido al 100% */
+  }
+  
+  .contenido.izq {
+    background-color: rgba(253, 253, 253, 0.577); /* Fondo negro para contenido izq */
+    color: rgb(0, 0, 0); /* Texto blanco para contenido izq */
+  }
+  
+  .contenido.der {
+    background-color: #ffc800; /* Fondo específico para contenido der */
+    
+    color: rgb(0, 0, 0); /* Texto blanco para contenido der */
+  }
+  
+  
+  .contenido .texto {
+    margin-left: 30px;
+    flex-basis: 30%;
+  }
+  
+  .imagenJ img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    flex-basis: 50%;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+  }
+  .imagenJ img:hover {
+    transform:translate(10px);
+    -webkit-transform:translate(10px);
+    -moz-transform:translate(10px);
+    -ms-transform:translate(10px);
+    -o-transform:translate(10px);
+  }
+  
+  .contenido p {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  
+  .subtituloJ2 {
+    font-size: 32px;
+    margin-bottom: 3em;
+    text-align: center;
+    width: 100%;
+  }
+  .nombreJuego {
+    font-size: 30px;
+    font-family: 'Henny Penny';
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left:10px; ;
+  }
+  
+  /* Animadores */
+  
+  .contenedor-animadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -70em;
+    background-color:rgba(10, 43, 192, 0.254);
+    width: 100%;
+  }
+  .titulo-animadores{
+    font-size: 27px;
+    font-family: 'Henny Penny', cursive;
+    width: 100%;
+    background-color: #c7060677;
+  }
+  
+  .imagenesA {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  
+  .imagenesA img {
+    max-width: 100%; /* Ajustar ancho al 100% */
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+  }
+  
+  .imagenesA img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  .imagenesA p{
+    max-width: 400px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    
+  }
+  .imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subtituloA {
+    margin-top: 45px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 22px
+  }
+  
+  /* Acerca de Nosotros */
+  
+  .contenedor-nosotros {
+    position: relative;
+    top: -70em;
+    width: 100%;
+    background-color: rgba(243, 231, 8, 0.573);
+    
+  }
+  
+  
+  .subtituloAcerca{
+    font-size: 32px;
+    font-family: 'Henny Penny', cursive;
+    margin-top: 70px;
+  }
+  
+  .textoAcerca {
+    font-size: 25px;
+    margin: 0 400px;
+    margin-bottom: 70px;
+    
+    
+  }
+    
+  
+  
+  
+  /* Estilos del pie de página */
+  .footer {
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    
+  }
+  
+  .footer p {
+    margin: 0px 0;
+  }
+  
+  .footer a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  
