@@ -6,7 +6,8 @@ body {
     font-family: 'Caveat Brush', cursive;
     line-height: 1.2;
     color: #333;
-    background-color: #f19a28;
+    background-color: #000000;
+    
   }
 
   /* Estilos del encabezado */
@@ -16,25 +17,23 @@ body {
     align-content: space-around;
     flex-direction: column;
     text-align: center;
-    height: 100%;
-    width: 100%;
-   
-    
+
   }
   
-  .header {
+  .header.sr1 {
     background-color: #f19a28;
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    width: 100vw;
-    height: 1%;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    width: 100%;
     z-index: 999;
     position: fixed;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   }
+  
   
   .logo img {
     height: 110px;
@@ -42,7 +41,12 @@ body {
     width: 110px;
     transition: transform 0.3s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+    margin-top: 5px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
   
   .logo img:hover {
     transform: translateX(10px);
@@ -72,9 +76,13 @@ body {
     text-decoration: none;
     color: white;
     background-color: #333;
-    border-radius: 5px;
+    border-radius: 30px;
     transition: background-color 0.3s;
-  } 
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+} 
 
   nav a:hover {
     background-color: #555;
@@ -90,11 +98,15 @@ body {
     background-color: #ee0505;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     text-decoration: none;
     transition: background-color 0.3s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+}
   
   .contacto a:hover {
     background-color: #0e0801e3;
@@ -104,23 +116,23 @@ body {
     display: flex;
     align-content: space-around;
     flex-direction: column;
-    text-align: center;
-    
+    text-align: center; 
+       
   }
 
   .intro {
     position: relative;
-    background-color: #c4050588;
+    background-color: #f17427ee;
     width: 100vw;
-    height: 82vh;
-    padding-top: 170px;
-    
+    height: 50rem;
+    padding-top: 170px;    
   }
 
   .titulo {
     position: relative;
     font-family: 'Henny Penny', cursive;
     font-size: 50px;
+    
     
     
   }
@@ -136,11 +148,15 @@ body {
     display: flex;
     flex-direction: column;
     margin-top: -3em;
+    
+    
+    
   }
 
   .texto-1 {
     font-size: 20px;
     margin: 0 40px;
+    
   }
 
   .imagenIntro {
@@ -149,6 +165,8 @@ body {
     gap: 50px;
     margin-top: 20px;
     margin-bottom: 5em;
+    
+    
   }
 
   .imagenIntro img {
@@ -157,11 +175,12 @@ body {
     border-radius: 10px;
     transition: transform 0.3s;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
   }
   
   .imagenIntro img:hover {
     transform: scale(1.1);
-    z-index: 1;
+    
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
@@ -174,6 +193,234 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    height: 60rem;
+    background-color: #f12828;
+    
+
   }
 
+  .contenido-juegos1 p{
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 120px;
+  }
+
+  
+  .titulo-juegos{
+  font-size: 27px;
+  font-family: 'Henny Penny', cursive;
+  margin-top: 80px;
+  margin-bottom: 40px;
+  width: 100vw;
+  }
+
+  .subtituloJ1 {
+  margin-bottom: 80px;
+  font-weight: bold;
+  font-size: 22px
+  }
+
+  .imagenesJ {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 5em;
+  }
+
+  .imagenes1 img {
+    margin: 0 24px;
+    max-width: 100%;
+    width: 35%;
+    height: 300px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+
+  .imagenes1 img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  }
+  
+  .contenedorJuegos2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+   
+  }
+  
+  .contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw; 
+    height: 40rem;
+    margin-bottom: -1px;
+  }
+  
+  .contenido.izq {
+    background-color: rgba(119, 240, 75, 0.596); 
+    color: rgb(0, 0, 0); 
+  }
+  
+  .contenido.der {
+    background-color: #ffc800; 
+    
+    color: rgb(0, 0, 0); 
+  }
+  
+  
+  .contenido .texto {
+    margin-left: 30px;
+    flex-basis: 30%;
+  }
+  
+  .imagenJ img {
+    height: 400px;
+    width: 600px;
+    object-fit: cover;
+    flex-basis: 50%;
+    margin-top: 7em;
+    margin-bottom: 7em;
+    
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+  }
+  .imagenJ img:hover {
+    transform:translate(10px);
+    -webkit-transform:translate(10px);
+    -moz-transform:translate(10px);
+    -ms-transform:translate(10px);
+    -o-transform:translate(10px);
+  }
+  
+  .contenido p {
+    font-size: 20px;
+    margin-right: 30px;
+  }
+  
+  .subtituloJ2 {
+    font-size: 27px;
+    text-align: center;
+    width: 100%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    font-family: 'Henny Penny';
+    background-color: rgb(245, 138, 39);
+    
+    
+  }
+  .nombreJuego {
+    font-size: 30px;
+    font-family: 'Henny Penny';
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    margin-right: 30px;
+    margin-left:10px; ;
+  }
+  
+  /* Animadores */
+  
+  .contenedor-animadores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #ffc800;
+    width: 100%;
+
+  }
+  .titulo-animadores{
+    font-size: 27px;
+    font-family: 'Henny Penny', cursive;
+    width: 100%;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    background-color: rgb(249, 2, 2);
+
+  }
+  
+  .imagenesA {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    gap: 40px;
+  }
+  
+  .imagenesA img {
+    max-width: 100%;
+    height: 300px;
+    width: 350px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    -webkit-transition: transform 0.3s;
+    -moz-transition: transform 0.3s;
+    -ms-transition: transform 0.3s;
+    -o-transition: transform 0.3s;
+}
+  
+  .imagenesA img:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+  }
+  
+  .imagenesA p{
+    max-width: 400px;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    
+  }
+
+  .imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .subtituloA {
+    margin-top: 60px;
+    margin-bottom: 45px;
+    font-weight: bold;
+    font-size: 22px
+  }
+  
+  /* Acerca de Nosotros */
+  
+  .contenedor-nosotros {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #f17427ee;
+    padding-top: 52px;
+    padding-bottom: 50px;
+    
+  }
+  .subtituloAcerca{
+    font-size: 32px;
+    font-family: 'Henny Penny', cursive;
+  }
+  
+  .textoAcerca {
+    font-size: 22px;
+    margin: 0 40px;  
+  }
+    
   

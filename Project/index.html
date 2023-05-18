@@ -7,29 +7,30 @@
   <link rel="icon" href="img\favicon_io\favicon.ico" type="image/x-icon">
   <script src="https://unpkg.com/scrollreveal"></script>
   
+  
 </head>
 <body>
   <div class="contenedor">
-    <header class="header nave">
+    <header class="header sr1">
       <div class="logo">
-        <img src="img/istockphoto-157579123-612x612.jpg" alt="Imagen Portada">
+        <img src="img/istockphoto-157579123-612x612.jpg" href="index.html" alt="Imagen Portada">
       </div>
       <nav class="contenedor-nav">
         <ul>
-          <li class="btn"><a href="#intro">Inicio</a></li>
+          <li class="btn"><a href="index.html">Inicio</a></li>
           <li class="btn"><a href="#juegos">Juegos</a></li>
           <li class="btn"><a href="#animadores">Animadores</a></li>
           <li class="btn"><a href="#aboutus">Acerca de nosotros</a></li>
         </ul>
       </nav>
       <div class="contacto">
-        <a href="#" class="boton">Contacto</a>
+        <a class="boton" href="#aboutus">Contacto</a>
       </div>
     </header>
     
     <div class="contenedorP">
-      <section>
-        <div class="intro">
+      <section >
+        <div class="intro sr1" id="intro">
           <div class="titulo">
             <h1>La Konga</h1>
           </div>
@@ -50,42 +51,44 @@
             
             
           
-          
-          <div class="contenedorJuegosN sr">
-            <div class="titulo-juegos"><h2>Juegos</h2></div>
-            <div class="contenido-juegos1">
-              <div class="subtituloJ1">Nuestros clásicos amados por los más chicos</div>
-              <div class="imagenes1">
-                <div class="imagenesJ">
-                  <img src="img\IMG_3935.JPG" alt="Imagen1 Juegos">
-                  <img src="img\IMG_3936.JPG" alt="Imagen2 Juegos">
-                  <img src="img\IMG_3937.jpg" alt="Imagen 3 Juegos">
+          <div class="contenedorJuegos">
+            <div class="contenedorJuegosN sr1" id="juegos">
+              <div class="titulo-juegos"><h2>Juegos</h2></div>
+              <div class="contenido-juegos1">
+                <div class="subtituloJ1">Nuestros clásicos amados por los más chicos</div>
+                <div class="imagenes1">
+                  <div class="imagenesJ">
+                    <img src="img\IMG_3935.JPG" alt="Imagen1 Juegos">
+                    <img src="img\IMG_3936.JPG" alt="Imagen2 Juegos">
+                    <img src="img\IMG_3937.jpg" alt="Imagen 3 Juegos">
+                  </div>
                 </div>
-              </div>  
+                <p>¡Elegí el que mas te guste!</p>  
+              </div>
             </div>
+              
+    
+              <div class="contenedorJuegos2 der">
+                <div class="subtituloJ2 "><h2>Las preferencias de los adolescentes y adultos</h2></div>
+                <div class="contenido izq">
+                  <div class="imagenJ"><img src="img\a00ca7f6-e52c-43bd-bccb-f10409ca3000_1_78638-158020874110179.jpeg" alt="Imagen 1"></div>
+                  <div class="texto"><div class="nombreJuego">Toro Mecanico</div><p>El Toro Mecánico es un juego de atracción en el que los participantes intentan mantenerse montados en un toro mecánico en movimiento. El objetivo es mantenerse en el toro el mayor tiempo posible sin caerse.</p></div>
+                </div>
+                <div class="contenido der">
+                  <div class="texto"><div class="nombreJuego">Reloj Loco</div><p>En el Reloj Loco el objetivo del juego es saltar y agacharse esquivando las manecillas para no quedar eliminado.</p></div>
+                  <div class="imagenJ"><img src="img/IMG_3938.JPG" alt="Imagen 2"></div>
+                </div>
+                <div class="contenido izq">
+                  <div class="imagenJ"><img src="img/IMG_3941.JPG" alt="Imagen 3"></div>
+                  <div class="texto"><div class="nombreJuego">Futbolito</div><p>En el Futbolito podrás jugar entre y contra tus amigos en una mini cancha de fútbol. ¡Prepárate para ganar!</p></div>
+                </div>
+              </div>
           </div>
-            
-  
-            <div class="contenedorJuegos2">
-              <div class="subtituloJ2 der">Las preferencias de los adolescentes y adultos</div>
-              <div class="contenido izq">
-                <div class="imagenJ"><img src="img\a00ca7f6-e52c-43bd-bccb-f10409ca3000_1_78638-158020874110179.jpeg" alt="Imagen 1"></div>
-                <div class="texto"><div class="nombreJuego">Toro Mecanico</div><p>El Toro Mecánico es un juego de atracción en el que los participantes intentan mantenerse montados en un toro mecánico en movimiento. El objetivo es mantenerse en el toro el mayor tiempo posible sin caerse.</p></div>
-              </div>
-              <div class="contenido der">
-                <div class="texto"><div class="nombreJuego">Reloj Loco</div><p>En el Reloj Loco el objetivo del juego es saltar y agacharse esquivando las manecillas para no quedar eliminado.</p></div>
-                <div class="imagenJ"><img src="img/IMG_3938.JPG" alt="Imagen 2"></div>
-              </div>
-              <div class="contenido izq">
-                <div class="imagenJ"><img src="img/IMG_3941.JPG" alt="Imagen 3"></div>
-                <div class="texto"><div class="nombreJuego">Futbolito</div><p>En el Futbolito podrás jugar entre y contra tus amigos en una mini cancha de fútbol. ¡Prepárate para ganar!</p></div>
-              </div>
-            </div>
-            
+          
             
           
           
-          <div class="contenedor-animadores sr">
+          <div class="contenedor-animadores sr" id="animadores">
             <div class="titulo-animadores izq"><h2>Animadores</h2></div>
               <div class="subtituloA">¡Los animadores mas copados los tenemos nosotros!</div>
               <div class="imagenes1">
@@ -108,15 +111,16 @@
   
           </div>
           
-          <div class="contenedor-nosotros sr">
+          <div class="contenedor-nosotros sr1" id="aboutus">
             <h2 class="subtituloAcerca">Acerca de nosotros</h2>
             <p class="textoAcerca">En La Konga, creamos momentos mágicos y divertidos en cada celebración. Nuestro compromiso con la seguridad y la satisfacción de nuestros clientes es nuestra prioridad. Todos nuestros inflables y juegos mecánicos cumplen con altos estándares de seguridad y calidad. Contamos con una amplia selección de atracciones para adaptarnos a tus necesidades y preferencias. Además, ofrecemos animadores altamente capacitados para entretener a todas las edades. Nuestro equipo amigable se encarga de todos los detalles, desde la selección hasta la instalación y desmontaje. ¡Contáctanos hoy mismo y haz de tu fiesta un evento inolvidable!</p>
+            <div class="contenedor-pie der">
+              <div class="consulta"><h2>¡Para consultas!</h2></div>
+              <div class="boton-contacto"><button>Contacto</button></div>
+            </div>
           </div>
           
-          <div class="contenedor-pie der">
-            <div class="consulta"><h2>¡Para consultas!</h2></div>
-            <div class="boton-contacto"><button>Contacto</button></div>
-          </div>
+          
       </section>
 
     </div>
