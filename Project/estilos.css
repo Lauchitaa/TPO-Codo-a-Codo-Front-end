@@ -6,7 +6,6 @@ body {
   line-height: 1.2;
   color: #333;
   background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
-
 }
 
 /* Estilos del encabezado */
@@ -14,10 +13,9 @@ body {
   display: flex;
   align-content: space-around;
   flex-direction: column;
-  flex-wrap: wrap;
   text-align: center;
-  flex-basis: 0;
-  top: 20%;
+ 
+  
 }
 
 .header {
@@ -31,7 +29,6 @@ body {
   z-index: 999;
   position: fixed;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  
 }
 
 .logo img {
@@ -57,7 +54,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1; /* Agrega esta línea para que los botones ocupen el espacio disponible */
+  flex: 1;
 }
 
 nav li {
@@ -78,8 +75,8 @@ nav a:hover {
   background-color: #555;
 }
 
-.contacto{
-margin-right: 40px;
+.contacto {
+  margin-right: 40px;
 }
 
 .contacto a {
@@ -99,35 +96,34 @@ margin-right: 40px;
 }
 
 /* Estilos de la sección de introducción */
+
 .contenedor1 {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: auto;
   gap: 70em;
-  
-  
-
 }
 
 .intro {
   position: relative;
   top: 12em;
-  
-  
+  background-color: #c4050588;
+  width: 100%;
+  margin-top: -50px;
 }
 
 .titulo {
   position: relative;
   font-family: 'Henny Penny', cursive;
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .subtitulo {
   position: relative;
   font-family: 'Henny Penny', cursive;
-  font-size: 43px;
-  top: -69px;
+  font-size: 36px;
+  top: -1em;
 }
 
 .contenido-intro {
@@ -135,7 +131,7 @@ margin-right: 40px;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: -5em;
+  margin-top: -2em;
 }
 
 .texto-1 {
@@ -148,6 +144,7 @@ margin-right: 40px;
   justify-content: center;
   gap: 50px;
   margin-top: 20px;
+  margin-bottom: 5em;
 }
 
 .imagen-intro img {
@@ -183,27 +180,23 @@ margin-right: 40px;
   background-color: #0e0801e3;
 }
 
-.contenedor-juegos,
-.contenedor-nosotros,
-.contenedor-pie {
-  margin-top: 50px;
-}
-
 /* Juegos*/
 
-.contenedor-juegos{
+.contenedorJuegosN{
 display: flex;
-margin-top: -53em;
+margin-top: -58em;
 flex-direction: column;
 align-items: center;
-  
+width: 100%;
+background-color: #f78809a1;
+
 }
 
 .titulo-juegos{
   font-size: 27px;
   font-family: 'Henny Penny', cursive;
-  font-style: italic;
-
+  margin-top: 30px;
+  width: 100%;
 }
 
 .subtituloJ1 {
@@ -213,7 +206,6 @@ align-items: center;
 }
 
 .subtituloJ2 {
-  margin-bottom: 60px;
   margin-top: 100px;
   font-weight: bold;
   font-size: 22px
@@ -223,6 +215,7 @@ align-items: center;
   justify-content: center;
   gap:40px;
   margin-top: 20px;
+  margin-bottom: 5em;
 }
 
 .imagenes1 img {
@@ -254,26 +247,37 @@ align-items: center;
   -o-transform: scale(1.1);
 }
 
-.contenido-juegos2 {
+.contenedorJuegos2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 900px; /* Establece el ancho máximo del contenedor */
-  margin: 0 auto; /* Centra los contenedores en el centro de la página */
-  
+  background-color: #e61b09c3;
+  width: 100%;
+  margin-top: -70em;
 }
 
-.contenido {
+.contenido{
   display: flex;
   align-items: center;
-  margin: 50px;
   justify-content: center;
   width: 100%; /* Establece el ancho del div de contenido al 100% */
 }
 
+.contenido.izq {
+  background-color: rgba(253, 253, 253, 0.577); /* Fondo negro para contenido izq */
+  color: rgb(0, 0, 0); /* Texto blanco para contenido izq */
+}
+
+.contenido.der {
+  background-color: #ffc800; /* Fondo específico para contenido der */
+  
+  color: rgb(0, 0, 0); /* Texto blanco para contenido der */
+}
+
+
 .contenido .texto {
   margin-left: 30px;
-  flex-basis: 50%;
+  flex-basis: 30%;
 }
 
 .imagenJ img {
@@ -281,6 +285,8 @@ align-items: center;
   width: 600px;
   object-fit: cover;
   flex-basis: 50%;
+  margin-top: 7em;
+  margin-bottom: 7em;
   
   border-radius: 10px;
   transition: transform 0.3s;
@@ -305,9 +311,9 @@ align-items: center;
 
 .subtituloJ2 {
   font-size: 32px;
-  margin-bottom: 30px;
+  margin-bottom: 3em;
   text-align: center;
-  
+  width: 100%;
 }
 .nombreJuego {
   font-size: 30px;
@@ -327,8 +333,14 @@ align-items: center;
   align-items: center;
   text-align: center;
   margin-top: -70em;
-  
-
+  background-color:rgba(10, 43, 192, 0.254);
+  width: 100%;
+}
+.titulo-animadores{
+  font-size: 27px;
+  font-family: 'Henny Penny', cursive;
+  width: 100%;
+  background-color: #c7060677;
 }
 
 .imagenesA {
@@ -368,21 +380,28 @@ align-items: center;
   max-width: 400px;
   font-size: 18px;
   margin-top: 30px;
+  margin-bottom: 70px;
   
 }
 .imagen{
   display: flex;
   flex-direction: column;
   align-items: center;
-
+}
+.subtituloA {
+  margin-top: 45px;
+  margin-bottom: 45px;
+  font-weight: bold;
+  font-size: 22px
 }
 
 /* Acerca de Nosotros */
 
 .contenedor-nosotros {
   position: relative;
-  top: -60em;
-  width: 80%;
+  top: -70em;
+  width: 100%;
+  background-color: rgba(243, 231, 8, 0.573);
   
 }
 
@@ -390,11 +409,15 @@ align-items: center;
 .subtituloAcerca{
   font-size: 32px;
   font-family: 'Henny Penny', cursive;
+  margin-top: 70px;
 }
 
 .textoAcerca {
   font-size: 25px;
-  margin: 0 40px;
+  margin: 0 400px;
+  margin-bottom: 70px;
+  
+  
 }
   
 
