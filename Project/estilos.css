@@ -26,8 +26,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
     width: 100%;
     z-index: 999;
     position: fixed;
@@ -195,7 +194,7 @@ body {
     align-items: center;
     width: 100vw;
     height: 60rem;
-    background-color: #f12828;
+    background-color: #d93a3adc;
     
 
   }
@@ -210,7 +209,7 @@ body {
   .titulo-juegos{
   font-size: 27px;
   font-family: 'Henny Penny', cursive;
-  margin-top: 80px;
+  margin-top: 150px;
   margin-bottom: 40px;
   width: 100vw;
   }
@@ -348,9 +347,8 @@ body {
     font-size: 27px;
     font-family: 'Henny Penny', cursive;
     width: 100%;
-    padding-top: 3em;
-    padding-bottom: 3em;
-    background-color: rgb(249, 2, 2);
+    padding-top: 6em;
+    background-color: rgb(213, 35, 35);
 
   }
   

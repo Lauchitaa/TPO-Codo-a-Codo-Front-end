@@ -6,14 +6,6 @@ fetch('https://api.ejemplo.com/recurso', {
   }
 })
 
-window.sr = ScrollReveal();
-sr.reveal('.sr', {
-  duration: 2000,
-  origin: "bottom",
-  distance: '-200px',
-  easing: 'ease-in-out',
-  reset: true
-});
 
 window.sr = ScrollReveal();
 sr.reveal('.izq', {
@@ -41,7 +33,7 @@ sr.reveal('.sr1', {
 });
 
 
-  const links = document.querySelectorAll('.btn a');
+const links = document.querySelectorAll('.btn a');
 const contactoBoton = document.querySelector('.contacto a');
 const inicioBoton = document.querySelector('.logo img');
 const offset = 0; 
@@ -56,14 +48,20 @@ links.forEach((link) => {
   });
 });
 
-contactoBoton.addEventListener('click', (e) => {
-  e.preventDefault();
-  const acercaDeNosotros = document.querySelector('.contenedor-nosotros');
-  const targetPosition = acercaDeNosotros.offsetTop - offset;
-  window.scrollTo({ top: targetPosition, behavior: 'smooth' });
-});
+
 
 inicioBoton.addEventListener('click', (e) => {
   e.preventDefault();
   window.scrollTo({ top: 0, behavior: 'smooth' });
 });
+
+const animadoresBoton = document.querySelector('.btn a[href="#animadores"]');
+animadoresBoton.addEventListener('click', (e) => {
+  e.preventDefault();
+  const animadoresTitulo = document.querySelector('.contenedor-animadores .titulo-animadores');
+  const targetPosition = animadoresTitulo.offsetTop - offset;
+  window.scrollTo({ top: targetPosition, behavior: 'smooth' });
+});
+
+
+

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>La Konga</title>
+    <link rel="stylesheet" href="estilos-formulario.css">
+    <link rel="icon" href="img\favicon_io\favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    
+</head>
+<body>
+    <div class="contenedor">
+        <header class="header sr1">
+            <div class="logo">
+              <img src="img/istockphoto-157579123-612x612.jpg" href="index.html" alt="Imagen Portada">
+            </div>
+            <nav class="contenedor-nav">
+              <ul>
+                <li class="btn"><a href="index.html">Inicio</a></li>
+                <li class="btn"><a href="index.html">Juegos</a></li>
+                <li class="btn"><a href="index.html">Animadores</a></li>
+                <li class="btn"><a href="index.html">Acerca de nosotros</a></li>
+              </ul>
+            </nav>
+            <div class="contacto">
+              <a class="boton" href="#aboutus">Contacto</a>
+            </div>
+          </header>
+      
+      <div class="contenedorForm">
+        <form id="form" action="https://formsubmit.co/llloret.job@gmail.com" method="POST">
+          <div class="field">
+            <label for="from_name">Nombre</label>
+            <input type="text" name="Nombre"  required>
+          </div>
+          <div class="field">
+            <label for="from_name">Apellido</label>
+            <input type="text" name="Apellido"required>
+          </div>
+          <div class="field">
+            <label for="solicitud">Solicitud</label>
+            <input type="text" name="Solicitud"  required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="text" name="Email"  required>
+          </div>
+        
+         <button onclick="SendEmail()">Enviar</button>
+        </form>
+        
+        
+      </div>
+    </div>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</body>
+</html>
