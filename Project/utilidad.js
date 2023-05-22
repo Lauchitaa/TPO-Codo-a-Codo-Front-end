@@ -10,10 +10,8 @@ fetch('https://api.ejemplo.com/recurso', {
 window.sr = ScrollReveal();
 sr.reveal('.izq', {
   duration: 3000,
-  origin: "left",
+  origin: "bottom",
   distance: '-300px',
-  reset: true
-  
 });
 
 window.sr = ScrollReveal();
@@ -21,7 +19,7 @@ sr.reveal('.der', {
   duration: 3000,
   origin: "right",
   distance: '-300px',
-  reset: true,
+ 
 });
 
 window.sr = ScrollReveal();
@@ -29,7 +27,7 @@ sr.reveal('.sr1', {
   duration: 2000,
   origin: "top",
   distance: '-100px',
-  reset: true // Agrega esta opción para excluir la clase .sr1 de las animaciones de ScrollReveal
+  
 });
 
 
