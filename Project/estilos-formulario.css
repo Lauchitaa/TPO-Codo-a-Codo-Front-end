@@ -38,9 +38,7 @@ body {
   transform: translateX(10px);
 }
 
-nav {
-  flex-grow: 1;
-}
+
 
 nav ul {
   margin: 0;
@@ -49,7 +47,7 @@ nav ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex: 1;
+  
 }
 
 nav li {
@@ -143,4 +141,77 @@ button {
 
 button:hover {
   background-color: #d7831a;
+}
+
+
+
+@media (max-width:1100px) {
+
+  .header a{
+    font-size: 12px;
+  }
+  .header img{
+    width: 150%;
+    height: 80px;
+  }
+  nav a {
+    padding: 6px 10px;
+   
+  }
+  .contacto a {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+
+}
+
+@media (max-width:740px) {
+
+  .header a{
+    font-size: 10px;
+  }
+  .header img{
+    width: 150%;
+    height: 60px;
+  }
+  nav a {
+    padding: 1px 10px;
+   
+  }
+  nav li {
+    margin: 0 0px;
+  }
+  .contacto a {
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 10px;
+  }
+  
+
+}
+
+@media (max-width:550px) {
+
+  .header a{
+    font-size: 8px;
+  }
+  .header img{
+    width: 150%;
+    height: 40px;
+  }
+  nav a {
+    padding: 1px 8px;
+   
+  }
+  nav li {
+    margin: 0 0px;
+  }
+  .contacto a {
+    display: inline-block;
+    padding: 1px 10px;
+    font-size: 8px;
+  }
+  
+
 }
