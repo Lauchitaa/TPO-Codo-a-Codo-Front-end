@@ -35,7 +35,7 @@ sr.reveal('.sr1', {
 
 const links = document.querySelectorAll('.btn a');
 const contactoBoton = document.querySelector('.contacto a');
-const inicioBoton = document.querySelector('.logo img');
+const inicioBoton = document.querySelector('.logo img', "");
 const offset = 0; 
 
 links.forEach((link) => {
